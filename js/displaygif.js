@@ -9,5 +9,8 @@ export function displayGif(query) {
 		})
 		.then((response) => {
 			img.src = response.data.images.original.url;
+		})
+		.catch((err) => {
+			alert('Error finding Gif!');
 		});
 }
